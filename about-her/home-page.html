@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homepage</title>
+
+        <link rel="stylesheet" href="src/CSS/home-page.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <div class="header">
+                <h1>Homepage</h1>
+            </div>
+
+
+            <div class="middle-banner">
+
+                <div>
+                    <h2>Welcome!</h2>
+
+                    <p>
+                        Hi, and welcome! I'm so glad you're here! Take a look around, explore the different pages, and have fun discovering what's inside!
+                        Ready to get started? Click a button below!
+                    </p>
+                </div>
+
+
+                <div class="buttons">
+
+                    <div class="home-button">
+
+                        <a href="index.html">
+                            <button>About Her💄</button>
+                        </a>
+
+                        <span class="button-description">
+                            A little world is waiting to be discovered! ✨
+                        </span>
+
+                    </div>
+
+
+                    <div class="home-button">
+
+                        <a href="Coding-Garden.html">
+                            <button>Coding Garden🌷</button>
+                        </a>
+
+                        <span class="button-description">
+                            A little garden of code is growing! 🌱
+                        </span>
+
+                    </div>
+
+
+                    <div class="home-button">
+
+                        <a href="garden-journal.html">
+                            <button>Garden Journal📖</button>
+                        </a>
+
+                        <span class="button-description">
+                            Take a peek into the process! 📝
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="legend">
+
+                <h2>How Everything Works!</h2>
+
+
+                <div class="legend-items">
+
+
+                    <div class="legend-item">
+
+                        <h3>Click</h3>
+
+                        <p>
+                            Click the buttons to explore each page of My website!
+                        </p>
+
+                        <div class="legend-example">
+
+                            <small>(Example)</small>
+
+                            <button class="example-nav-button" onclick="this.classList.toggle('example-clicked')">
+                                BUTTON
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="legend-item">
+
+                        <h3>Hover</h3>
+
+                        <p>
+                            Hover over the Homepage buttons to see a little description of What my pages are like!
+                        </p>
+
+                        <div class="legend-example">
+
+                            <small>(Example)</small>
+
+                            <div class="example-hover">
+
+                                <button class="example-nav-button">
+                                    BUTTON
+                                </button>
+
+                                <div class="example-hover-description">
+                                    Little description! ✨
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="legend-item">
+
+                        <h3>Cards</h3>
+
+                        <p>
+                            Click the cards on my other pages to read more about that topic!
+                        </p>
+
+                        <div class="legend-example">
+
+                            <small>(Example)</small>
+
+                            <div class="example-info-card" onclick="this.classList.toggle('example-open')">
+
+                                <strong>TITLE</strong>
+
+                                <small class="example-hint">
+                                    Click to learn more! ✨
+                                </small>
+
+                                <p class="example-card-info">
+                                    Paragraph ...
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="legend-item">
+
+                        <h3>Show All / Hide All</h3>
+
+                        <p>
+                            Use the Show All and Hide All buttons to open or close all the cards at once if your in a rush!
+                        </p>
+
+                        <div class="legend-example">
+
+                            <small>(Example)</small>
+
+                            <div class="example-controls">
+
+                                <button class="example-toggle" onclick="openExampleCard()">
+                                    Show All ✨
+                                </button>
+
+                                <button class="example-toggle" onclick="closeExampleCard()">
+                                    Hide All ✨
+                                </button>
+
+                            </div>
+
+
+                            <div class="example-info-card" id="example-control-card">
+
+                                <strong>TITLE</strong>
+
+                                <p class="example-card-info">
+                                    Paragraph ...
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <script>
+
+            function openExampleCard(){
+
+                document.getElementById("example-control-card").classList.add("example-open");
+
+            }
+
+
+            function closeExampleCard(){
+
+                document.getElementById("example-control-card").classList.remove("example-open");
+
+            }
+
+        </script>
+
+    </body>
+</html>
